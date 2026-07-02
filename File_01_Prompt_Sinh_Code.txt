@@ -1,0 +1,18 @@
+Đóng vai là một Senior Backend Developer, hãy viết mã nguồn Java (Spring Boot) cho chức năng "Đăng ký mở tài khoản cơ bản" dựa trên mô tả chức năng từ tài liệu SRS.
+
+**Mô tả chức năng:**
+- Chức năng: Đăng ký mở tài khoản cơ bản.
+- Input (Request): fullName (Họ và tên), phone (Số điện thoại), email (Địa chỉ email), citizenId (Số CCCD).
+- Output (Response): accountId (Mã tài khoản), accountNumber (Số tài khoản), status (Trạng thái - PENDING/ACTIVE).
+
+**Yêu cầu kỹ thuật:**
+1. **Cấu trúc dự án:** Sinh đầy đủ các class theo chuẩn kiến trúc 3 lớp (MVC) bao gồm: Entity, DTO (Request và Response), Repository, Service (Interface & Implementation), và Controller.
+2. **Chất lượng Code:**
+   - Phải có JavaDoc giải thích các class và method rõ ràng.
+   - Bổ sung comment tiếng Việt trong các đoạn logic xử lý để giải thích nghiệp vụ.
+3. **Data Validation:** Áp dụng các annotation validation chuẩn:
+   - `@NotBlank`, `@Email` cho các trường tương ứng.
+   - Custom validation cho `citizenId` đảm bảo đúng định dạng 12 số (sử dụng Regex).
+4. **Sơ đồ kiến trúc (Bonus Task):** Vẽ một sơ đồ kiến trúc hệ thống (Architecture Diagram) bằng Mermaid để mô tả luồng xử lý từ Client -> Controller -> Service -> Database.
+
+Vui lòng cung cấp toàn bộ mã nguồn vào một phản hồi.
